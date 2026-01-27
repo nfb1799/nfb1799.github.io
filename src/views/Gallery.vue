@@ -32,11 +32,22 @@ import Ptcg2 from '../assets/ptcg.jpg'
 import Snake from '../assets/snake.png'
 import Project from '../components/Project.vue'
 import EmojiReact from '../assets/emoji-react.png'
+import FitnessTracker from '../assets/fitness-tracker.png'
 export default {
   components: {Project},
   data () {
     return {
       projects: [
+        {
+          title: 'Fitness Tracker',
+          link: 'https://nfb1799.github.io/fitness-tracker/',
+          imageSrc: FitnessTracker,
+          description: 'A full-stack fitness tracking application featuring workout logging, nutrition tracking, weigh-ins, and social features. Includes user authentication, real-time data sync, and offline support.',
+          technologies: 'React, Firebase (Auth & Firestore), Vite, JavaScript, CSS',
+          roles: 'Nik Barbero developed this app by himself',
+          learningOutcomes: 'Gained hands-on experience with Firebase authentication and Firestore for real-time database management. Learned to implement offline-first functionality and build a multi-feature dashboard with React context for state management.',
+          challenges: 'Integrating Firebase authentication with Firestore security rules while maintaining a seamless user experience. Implementing offline support required careful handling of data synchronization.',
+        },
         {
           title: 'Pokémon TCG Search',
           link: 'https://nfb1799.github.io/pokemon-tcg-search/',
