@@ -1,6 +1,6 @@
 const links = [
   { label: 'GitHub', href: 'https://github.com/nfb1799', external: true },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nik-barbero-9851171a2/', external: true },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nik-barbero/', external: true },
   { label: 'Email', href: 'mailto:nikbarbero@yahoo.com', external: false },
   { label: 'Resume', href: '/ResumeNikBarbero.pdf', external: true },
 ]
