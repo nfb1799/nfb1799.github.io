@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import self from '../assets/self.png'
+import self from '../assets/self.jpg'
 
 export default function StickyBar() {
   const [hidden, setHidden] = useState(false)

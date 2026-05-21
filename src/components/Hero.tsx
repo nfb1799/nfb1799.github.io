@@ -1,4 +1,4 @@
-import self from '../assets/self.png'
+import self from '../assets/self.jpg'
 
 const socials = [
   {
@@ -28,8 +28,13 @@ const socials = [
 
 const Photo = ({ className = '' }: { className?: string }) => (
   <div className={`relative ${className}`}>
-    <div className="aspect-[4/5] md:aspect-square bg-surface-container rounded-xl overflow-hidden border border-outline-variant shadow-sm">
-      <img alt="Nik Barbero headshot" className="w-full h-full object-cover" src={self} />
+    <div className="aspect-square bg-surface-container rounded-xl overflow-hidden border border-outline-variant shadow-sm">
+      <img
+        alt="Nik Barbero headshot"
+        className="w-full h-full object-cover"
+        style={{ objectPosition: 'center top' }}
+        src={self}
+      />
       {/* Badge sits inside the photo bottom-left on mobile */}
       <div className="md:hidden absolute bottom-3 left-3 px-3 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm">
         <div className="font-label-sm text-label-sm text-outline uppercase tracking-widest">
