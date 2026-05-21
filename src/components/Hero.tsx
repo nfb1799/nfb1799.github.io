@@ -57,7 +57,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="bg-surface"
+      className="bg-surface scroll-mt-16"
     >
       <div
         className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-4 pb-10 md:pt-12 md:pb-24 grid grid-cols-1 md:grid-cols-12 md:gap-gutter md:items-center"
