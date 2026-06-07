@@ -10,7 +10,7 @@ const cards: Card[] = [
     icon: 'javascript',
     title: 'Frontend Engineering',
     description: 'Building reactive, state-managed applications focusing on performance and accessibility.',
-    tags: ['Vue.js', 'React', 'TypeScript'],
+    tags: ['Vue.js', 'React', 'JavaScript'],
   },
   {
     icon: 'terminal',
@@ -19,10 +19,10 @@ const cards: Card[] = [
     tags: ['C# / .NET', 'Firebase', 'SQL'],
   },
   {
-    icon: 'groups',
-    title: 'Product & Delivery',
-    description: 'Shipping production features in high-velocity Agile environments through close collaboration with developers and QA.',
-    tags: ['Agile', 'Code Review', 'Mentorship'],
+    icon: 'sports_esports',
+    title: 'Creative Engineering',
+    description: 'Bringing game-development fundamentals to the web through interactive UIs and engaging user experiences.',
+    tags: ['Canvas API', 'PixiJS', 'Unity'],
   },
 ]
 
@@ -44,11 +44,11 @@ export default function Expertise() {
           {cards.map((c) => (
             <div
               key={c.title}
-              className="bg-surface border border-outline-variant p-8 rounded-lg hover:border-primary transition-colors"
+              className="bg-surface border border-outline-variant p-8 rounded-lg hover:border-primary transition-colors flex flex-col"
             >
               <span className="material-symbols-outlined text-primary mb-6 text-4xl">{c.icon}</span>
               <h3 className="font-headline-md text-headline-md text-on-surface mb-4">{c.title}</h3>
-              <p className="text-on-surface-variant mb-6">{c.description}</p>
+              <p className="text-on-surface-variant mb-6 flex-grow">{c.description}</p>
               <div className="flex flex-wrap gap-2">
                 {c.tags.map((t) => (
                   <span
