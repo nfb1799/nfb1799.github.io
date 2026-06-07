@@ -32,7 +32,7 @@ const projects: Project[] = [
     tags: ['React', 'Vite', 'Axios', 'REST API'],
   },
   {
-    title: 'Emoji Games (React)',
+    title: 'Emoji Games',
     link: 'https://nfb1799.github.io/emoji-games-react/',
     image: emoji,
     description:
