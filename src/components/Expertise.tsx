@@ -19,10 +19,10 @@ const cards: Card[] = [
     tags: ['C# / .NET', 'Firebase', 'SQL'],
   },
   {
-    icon: 'precision_manufacturing',
-    title: 'DevOps & Systems',
-    description: 'Streamlining development lifecycles through CI/CD pipelines and cloud-native tooling.',
-    tags: ['Azure', 'Docker', 'Git / GitHub'],
+    icon: 'groups',
+    title: 'Product & Delivery',
+    description: 'Shipping production features in high-velocity Agile environments through close collaboration with developers and QA.',
+    tags: ['Agile', 'Code Review', 'Mentorship'],
   },
 ]
 
