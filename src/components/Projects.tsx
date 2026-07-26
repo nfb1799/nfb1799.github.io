@@ -118,32 +118,32 @@ function ProjectCard({ p, compact = false }: { p: Project; compact?: boolean }) 
       </div>
 
       <div className={`${compact ? 'p-5' : 'p-6'} flex flex-col flex-grow`}>
-        <div className="flex items-center justify-between gap-2 mb-1">
-          <span className="font-label-sm text-label-sm text-outline uppercase tracking-widest">
-            {p.date}
-          </span>
+        <div className="flex items-start justify-between gap-2">
+          <h4
+            className={`${
+              compact ? 'text-body-lg font-semibold' : 'font-headline-md text-headline-md'
+            } text-on-surface`}
+          >
+            <a
+              href={p.link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${p.title} — open live project`}
+              className="hover:text-primary transition-colors after:absolute after:inset-0 after:content-['']"
+            >
+              {p.title}
+            </a>
+          </h4>
           <span
-            className="material-symbols-outlined text-lg text-on-surface-variant group-hover:text-primary transition-colors"
+            className="material-symbols-outlined text-lg text-on-surface-variant group-hover:text-primary transition-colors shrink-0"
             aria-hidden="true"
           >
             open_in_new
           </span>
         </div>
-        <h4
-          className={`${
-            compact ? 'text-body-lg font-semibold' : 'font-headline-md text-headline-md'
-          } text-on-surface mb-3`}
-        >
-          <a
-            href={p.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`${p.title} — open live project`}
-            className="hover:text-primary transition-colors after:absolute after:inset-0 after:content-['']"
-          >
-            {p.title}
-          </a>
-        </h4>
+        <span className="font-label-sm text-label-sm text-outline uppercase tracking-widest mt-1 mb-3">
+          {p.date}
+        </span>
 
         <p className={`${compact ? 'text-sm' : ''} text-on-surface-variant mb-6 flex-grow`}>
           {p.description}
