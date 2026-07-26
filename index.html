@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#30548d" />
 
+    <!-- Fonts: loaded here rather than via CSS @import so they fetch in parallel
+         with the stylesheet instead of waiting for it to parse. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap"
+    />
+    <!-- display=block keeps icon ligatures invisible until the font loads,
+         instead of flashing their literal names (e.g. "check_circle"). -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+    />
+
     <title>Nik Barbero | Full Stack Software Engineer</title>
     <meta
       name="description"
@@ -35,10 +50,47 @@
       content="3+ years building enterprise web apps in Vue.js, React, and C#/.NET. Currently open to new opportunities."
     />
     <meta name="twitter:image" content="https://nfb1799.github.io/og-image.jpg" />
-    <script type="module" crossorigin src="/assets/index-WS3pCH3x.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B9UyhQp9.css">
+
+    <!-- Structured data: helps search engines connect this page to the person. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nik Barbero",
+        "url": "https://nfb1799.github.io/",
+        "image": "https://nfb1799.github.io/og-image.jpg",
+        "jobTitle": "Full Stack Software Engineer",
+        "email": "mailto:nikbarbero@yahoo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rochester",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Rochester Institute of Technology"
+        },
+        "knowsAbout": [
+          "Vue.js",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "C#",
+          ".NET",
+          "SQL Server",
+          "RESTful API Design"
+        ],
+        "sameAs": [
+          "https://github.com/nfb1799",
+          "https://www.linkedin.com/in/nik-barbero/"
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dn_ncI8z.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-fA1_LEpv.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
