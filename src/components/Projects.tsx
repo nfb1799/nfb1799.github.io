@@ -107,26 +107,28 @@ const GitHubIcon = () => (
 
 function ProjectCard({ p, compact = false }: { p: Project; compact?: boolean }) {
   return (
-    <article className="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:border-primary transition-colors">
-      <a
-        href={p.link}
-        target="_blank"
-        rel="noreferrer"
-        aria-label={`${p.title} — open live project`}
-        className="block aspect-video relative overflow-hidden bg-surface-container-highest"
-      >
+    <article className="group relative bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:border-primary transition-colors focus-within:border-primary">
+      <div className="aspect-video relative overflow-hidden bg-surface-container-highest">
         <img
           alt={`${p.title} screenshot`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           src={p.image}
           loading="lazy"
         />
-      </a>
+      </div>
 
       <div className={`${compact ? 'p-5' : 'p-6'} flex flex-col flex-grow`}>
-        <span className="font-label-sm text-label-sm text-outline uppercase tracking-widest mb-1">
-          {p.date}
-        </span>
+        <div className="flex items-center justify-between gap-2 mb-1">
+          <span className="font-label-sm text-label-sm text-outline uppercase tracking-widest">
+            {p.date}
+          </span>
+          <span
+            className="material-symbols-outlined text-lg text-on-surface-variant group-hover:text-primary transition-colors"
+            aria-hidden="true"
+          >
+            open_in_new
+          </span>
+        </div>
         <h4
           className={`${
             compact ? 'text-body-lg font-semibold' : 'font-headline-md text-headline-md'
@@ -136,7 +138,8 @@ function ProjectCard({ p, compact = false }: { p: Project; compact?: boolean }) 
             href={p.link}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-primary transition-colors"
+            aria-label={`${p.title} — open live project`}
+            className="hover:text-primary transition-colors after:absolute after:inset-0 after:content-['']"
           >
             {p.title}
           </a>
@@ -157,32 +160,20 @@ function ProjectCard({ p, compact = false }: { p: Project; compact?: boolean }) 
           ))}
         </div>
 
-        <div className="flex items-center gap-4 pt-4">
-          <a
-            href={p.link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`${p.title} — open live project`}
-            className="inline-flex items-center gap-1.5 py-3 -my-1.5 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
-          >
-            Live
-            <span className="material-symbols-outlined text-base" aria-hidden="true">
-              open_in_new
-            </span>
-          </a>
-          {p.repo && (
+        {p.repo && (
+          <div className="pt-4">
             <a
               href={p.repo}
               target="_blank"
               rel="noreferrer"
               aria-label={`${p.title} — view source code on GitHub`}
-              className="inline-flex items-center gap-1.5 py-3 -my-1.5 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+              className="relative z-10 inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-outline-variant rounded font-label-md text-label-md text-on-surface-variant bg-surface-container-lowest hover:border-primary hover:text-primary transition-colors"
             >
-              Code
               <GitHubIcon />
+              View Code
             </a>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </article>
   )
