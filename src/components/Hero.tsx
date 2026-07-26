@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
         <h1
           className="font-display text-[36px] md:text-display leading-[1.04] md:leading-[1.1] tracking-[-0.025em] text-on-surface"
-          style={{ textWrap: 'balance' as 'balance' }}
+          style={{ textWrap: 'balance' as const }}
         >
           Full Stack Software Engineer building{' '}
           <span className="text-primary">robust, scalable systems.</span>
