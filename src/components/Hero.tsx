@@ -91,10 +91,10 @@ export default function Hero() {
       {/* BOTTOM TEXT (lede + actions + socials) */}
       <div className="space-y-6 md:col-span-7 md:row-start-2 md:self-start">
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-          Full-stack Software Engineer with 3+ years of professional experience building enterprise
-          web applications in Vue.js and C#/.NET, with additional hands-on work in React. Strong
-          background in front-end state management, RESTful API design, and SQL-backed systems.
-          Graduated Summa Cum Laude from RIT.
+          Full-stack Software Engineer with 3+ years building enterprise web applications used by
+          thousands of utility-industry users. Experienced across Vue.js, React, C#/.NET, REST APIs,
+          and SQL Server, with a track record of owning features from initial design through
+          production. Graduated Summa Cum Laude from RIT.
         </p>
 
         <div className="flex flex-wrap gap-3 md:gap-4">

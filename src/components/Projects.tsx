@@ -29,7 +29,7 @@ const projects: Project[] = [
     link: 'https://nextfolio-five-mu.vercel.app/',
     image: nextfolio,
     description:
-      'Next.js 16 App Router showcase built to learn the framework end-to-end: server components, server actions with optimistic UI, parallel and intercepting route modals, streaming with Suspense, and cookie-based auth gating. Deployed on Vercel.',
+      'Full-stack storefront in Next.js 16 with cookie-based auth, custom middleware, and Server Actions guarding a dashboard. Product pages render as shareable modals over the shop grid via parallel and intercepting routes — built as a deliberate tour of the App Router, from server components to streaming and optimistic UI. Deployed on Vercel.',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
   },
   {

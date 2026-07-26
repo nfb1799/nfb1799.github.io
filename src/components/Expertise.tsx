@@ -10,13 +10,13 @@ const cards: Card[] = [
     icon: 'javascript',
     title: 'Frontend Engineering',
     description: 'Building reactive, state-managed applications focusing on performance and accessibility.',
-    tags: ['Vue.js', 'React', 'JavaScript'],
+    tags: ['Vue.js', 'React', 'Next.js', 'TypeScript'],
   },
   {
     icon: 'terminal',
     title: 'Backend Architecture',
     description: 'Designing robust RESTful APIs and services with security and scalability at the core.',
-    tags: ['C# / .NET', 'Firebase', 'SQL'],
+    tags: ['C# / .NET', 'SQL Server', 'REST APIs', 'Firebase'],
   },
   {
     icon: 'sports_esports',
