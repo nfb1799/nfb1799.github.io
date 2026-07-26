@@ -36,7 +36,7 @@ const recent: Project[] = [
     image: nextfolio,
     description:
       'Full-stack storefront in Next.js 16 with cookie-based auth, custom middleware, and Server Actions guarding a dashboard. Product pages render as shareable modals over the shop grid via parallel and intercepting routes — built as a deliberate tour of the App Router, from server components to streaming and optimistic UI. Deployed on Vercel.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
+    tags: ['Next.js', 'TypeScript', 'Tailwind'],
   },
   {
     title: 'Pokémon TCG Search',
