@@ -19,10 +19,10 @@ const cards: Card[] = [
     tags: ['C# / .NET', 'SQL Server', 'REST APIs', 'Firebase'],
   },
   {
-    icon: 'sports_esports',
-    title: 'Creative Engineering',
-    description: 'Bringing game-development fundamentals to the web through interactive UIs and engaging user experiences.',
-    tags: ['Canvas API', 'PixiJS', 'Unity'],
+    icon: 'smartphone',
+    title: 'Mobile & Offline',
+    description: 'Packaging web apps as mobile builds and keeping them usable without connectivity, syncing reliably once a device is back online.',
+    tags: ['Capacitor', 'Ionic', 'PWA'],
   },
 ]
 

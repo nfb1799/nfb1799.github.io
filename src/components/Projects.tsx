@@ -25,7 +25,7 @@ const recent: Project[] = [
     date: 'Jan 2026 – Present',
     image: fitness,
     description:
-      'Full-stack fitness tracker covering workout logging, nutrition, and weight-progress visualization. Recharts dashboards, Leaflet GPS route mapping, and Firebase auth with real-time sync, installable as a PWA. Try it with “Continue as Guest” — no signup needed.',
+      'Full-stack fitness tracker covering workout logging, nutrition, and weight-progress visualization. Recharts dashboards, Leaflet GPS route mapping, and Firebase auth with real-time sync, installable as a PWA. Try it with “Continue as Guest”.',
     tags: ['React', 'Firebase', 'Vite', 'PWA'],
   },
   {
