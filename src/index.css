@@ -4,77 +4,79 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ----------------------------------------------------------------
+   Theme tokens.
+
+   Values are space-separated RGB channels, not hex, because
+   tailwind.config.js consumes them as rgb(var(--token) / <alpha-value>).
+   That is what lets utilities like bg-surface/80 and
+   border-outline-variant/30 keep working.
+
+   To re-skin the site, change these numbers — never the generated
+   utility classes.
+   ---------------------------------------------------------------- */
+:root {
+  --color-surface: 247 249 251;
+  --color-surface-container: 236 238 240;
+  --color-surface-container-low: 242 244 246;
+  --color-surface-container-highest: 224 227 229;
+  --color-surface-variant: 224 227 229;
+  --color-secondary-container: 214 224 246;
+  --color-on-surface: 25 28 30;
+  --color-on-surface-variant: 67 71 80;
+  --color-on-secondary-container: 89 99 118;
+  --color-outline: 115 119 129;
+  --color-outline-variant: 195 198 209;
+  --color-primary: 48 84 141;
+  --color-primary-container: 74 109 167;
+  --color-on-primary-container: 235 239 255;
+
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background-color: #f7f9fb;
-  color: #191c1e;
-  font-family: 'Inter', system-ui, sans-serif;
+  background-color: rgb(var(--color-surface));
+  color: rgb(var(--color-on-surface));
+  font-family: var(--font-body);
 }
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 /* ----------------------------------------------------------------
-   Mobile-only theme: Claude Design "warm minimal"
-   Activates under 768px. Desktop keeps the Obsidian Slate look.
+   Mobile-only theme: "warm minimal" — cream surfaces, deeper blue.
+   Activates under 768px; desktop keeps the cool slate look.
+
+   Only the token values change here. No utility class is overridden,
+   so editing a class in JSX can't silently break the mobile theme.
    ---------------------------------------------------------------- */
 @media (max-width: 767px) {
-  body {
-    font-family: 'Geist', 'Inter', system-ui, sans-serif;
-    background-color: #f4f3ee;
-    color: #0e1726;
+  :root {
+    --color-surface: 244 243 238;
+    --color-surface-container: 235 234 227;
+    --color-surface-container-low: 235 234 227;
+    --color-surface-container-highest: 229 227 216;
+    --color-surface-variant: 235 234 227;
+    --color-secondary-container: 230 236 247;
+    --color-on-surface: 14 23 38;
+    --color-on-surface-variant: 59 70 88;
+    --color-on-secondary-container: 30 58 138;
+    --color-outline: 123 133 149;
+    --color-outline-variant: 227 225 216;
+    --color-primary: 30 58 138;
+    --color-primary-container: 230 236 247;
+    --color-on-primary-container: 30 58 138;
+
+    --font-body: 'Geist', 'Inter', system-ui, sans-serif;
   }
 
-  /* Surfaces */
-  .bg-surface { background-color: #f4f3ee !important; }
-  .bg-surface\/80 { background-color: rgba(244, 243, 238, 0.85) !important; }
-  .bg-surface-container { background-color: #ebeae3 !important; }
-  .bg-surface-container-low { background-color: #ebeae3 !important; }
-  .bg-surface-container-lowest { background-color: #ffffff !important; }
-  .bg-surface-container-highest { background-color: #e5e3d8 !important; }
-  .bg-surface-variant { background-color: #ebeae3 !important; }
-  .bg-secondary-container { background-color: #e6ecf7 !important; }
-
-  /* Text */
-  .text-on-surface { color: #0e1726 !important; }
-  .text-on-surface-variant { color: #3b4658 !important; }
-  .text-on-secondary-container { color: #1e3a8a !important; }
-  .text-outline { color: #7b8595 !important; }
-
-  /* Primary (deep blue) */
-  .text-primary { color: #1e3a8a !important; }
-  .bg-primary { background-color: #1e3a8a !important; }
-  .border-primary { border-color: #1e3a8a !important; }
-  .hover\:text-primary:hover { color: #1e3a8a !important; }
-  .hover\:border-primary:hover { border-color: #1e3a8a !important; }
-  .selection\:bg-primary-container::selection { background-color: #e6ecf7 !important; }
-  .selection\:text-on-primary-container::selection { color: #1e3a8a !important; }
-
-  /* Borders / outlines */
-  .border-outline-variant { border-color: #e3e1d8 !important; }
-  .border-outline-variant\/30 { border-color: rgba(227, 225, 216, 0.6) !important; }
-  .border-outline-variant\/40 { border-color: rgba(227, 225, 216, 0.7) !important; }
-  .border-outline-variant\/50 { border-color: rgba(227, 225, 216, 0.8) !important; }
-  .border-outline-variant\/60 { border-color: rgba(227, 225, 216, 0.9) !important; }
-  .border-on-secondary-container { border-color: #1e3a8a !important; }
-
-  /* Accent helper: brighter blue for in-headline highlights */
-  .mobile-accent { color: #2563eb !important; }
-
-  /* Card shadows look better on cream */
+  /* Card shadows read better against the cream background. */
   main section .border-outline-variant {
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
   }
