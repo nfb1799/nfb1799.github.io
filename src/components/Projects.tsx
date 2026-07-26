@@ -1,4 +1,5 @@
 import fitness from '../assets/fitness-tracker.png'
+import nextfolio from '../assets/nextfolio.png'
 import ptcg from '../assets/pokemon-tcg-search.png'
 import emoji from '../assets/emoji-react.png'
 import blob from '../assets/blob.png'
@@ -22,6 +23,14 @@ const projects: Project[] = [
     description:
       'Full-stack fitness tracking app with workout logging, nutrition, weigh-ins, and social features. Real-time sync, offline support, and Firebase auth.',
     tags: ['React', 'Firebase', 'Vite'],
+  },
+  {
+    title: 'Nextfolio',
+    link: 'https://nextfolio-five-mu.vercel.app/',
+    image: nextfolio,
+    description:
+      'Next.js 16 App Router showcase built to learn the framework end-to-end: server components, server actions with optimistic UI, parallel and intercepting route modals, streaming with Suspense, and cookie-based auth gating. Deployed on Vercel.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
   },
   {
     title: 'Pokémon TCG Search',
