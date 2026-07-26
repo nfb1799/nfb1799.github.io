@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#30548d" />
 
+    <!-- Fonts: loaded here rather than via CSS @import so they fetch in parallel
+         with the stylesheet instead of waiting for it to parse. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap"
+    />
+    <!-- display=block keeps icon ligatures invisible until the font loads,
+         instead of flashing their literal names (e.g. "check_circle"). -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+    />
+
     <title>Nik Barbero | Full Stack Software Engineer</title>
     <meta
       name="description"

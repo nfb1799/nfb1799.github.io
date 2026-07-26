@@ -73,7 +73,9 @@ export default function Nav() {
             aria-controls="mobile-drawer"
             onClick={() => setOpen((v) => !v)}
           >
-            <span className="material-symbols-outlined text-2xl">{open ? 'close' : 'menu'}</span>
+            <span className="material-symbols-outlined text-2xl" aria-hidden="true">
+              {open ? 'close' : 'menu'}
+            </span>
           </button>
         </div>
       </header>

@@ -46,7 +46,9 @@ export default function Expertise() {
               key={c.title}
               className="bg-surface border border-outline-variant p-8 rounded-lg hover:border-primary transition-colors flex flex-col"
             >
-              <span className="material-symbols-outlined text-primary mb-6 text-4xl">{c.icon}</span>
+              <span className="material-symbols-outlined text-primary mb-6 text-4xl" aria-hidden="true">
+                {c.icon}
+              </span>
               <h3 className="font-headline-md text-headline-md text-on-surface mb-4">{c.title}</h3>
               <p className="text-on-surface-variant mb-6 flex-grow">{c.description}</p>
               <div className="flex flex-wrap gap-2">

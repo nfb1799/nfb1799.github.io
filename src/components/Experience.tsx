@@ -76,7 +76,7 @@ function Timeline({ items }: { items: Entry[] }) {
           <ul className="space-y-4 font-body-md text-body-md text-on-surface-variant">
             {j.bullets.map((b) => (
               <li key={b} className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-primary text-sm mt-1">
+                <span className="material-symbols-outlined text-primary text-sm mt-1" aria-hidden="true">
                   check_circle
                 </span>
                 {b}

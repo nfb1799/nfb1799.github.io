@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import self from '../assets/self.jpg'
+import self from '../assets/self.webp'
 
 export default function StickyBar() {
   const [hidden, setHidden] = useState(false)
@@ -49,7 +49,9 @@ export default function StickyBar() {
         className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-primary text-on-primary text-sm font-medium rounded-full hover:opacity-90 transition-opacity shrink-0"
       >
         Hire me
-        <span className="material-symbols-outlined text-base">arrow_forward</span>
+        <span className="material-symbols-outlined text-base" aria-hidden="true">
+          arrow_forward
+        </span>
       </a>
     </aside>
   )

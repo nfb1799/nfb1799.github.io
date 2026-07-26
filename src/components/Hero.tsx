@@ -1,4 +1,4 @@
-import self from '../assets/self.jpg'
+import self from '../assets/self.webp'
 
 const socials = [
   {
@@ -22,7 +22,11 @@ const socials = [
   {
     label: 'Email',
     href: 'mailto:nikbarbero@yahoo.com',
-    icon: <span className="material-symbols-outlined text-xl">mail</span>,
+    icon: (
+      <span className="material-symbols-outlined text-xl" aria-hidden="true">
+        mail
+      </span>
+    ),
   },
 ]
 
@@ -103,7 +107,9 @@ export default function Hero() {
             href="#projects"
           >
             View Projects
-            <span className="material-symbols-outlined text-lg">arrow_forward</span>
+            <span className="material-symbols-outlined text-lg" aria-hidden="true">
+              arrow_forward
+            </span>
           </a>
           <a
             className="flex-1 md:flex-none px-6 md:px-8 py-3 border border-primary text-primary font-label-md text-label-md rounded hover:bg-primary-fixed transition-colors inline-flex items-center justify-center gap-2"
@@ -111,7 +117,9 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="material-symbols-outlined text-lg">download</span>
+            <span className="material-symbols-outlined text-lg" aria-hidden="true">
+              download
+            </span>
             Resume
           </a>
         </div>

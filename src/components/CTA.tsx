@@ -28,7 +28,7 @@ export default function CTA() {
             className="px-8 py-3 bg-primary text-on-primary font-label-md text-label-md rounded flex items-center gap-2 hover:opacity-90"
             href="mailto:nikbarbero@yahoo.com"
           >
-            <span className="material-symbols-outlined">mail</span>
+            <span className="material-symbols-outlined" aria-hidden="true">mail</span>
             Get In Touch
           </a>
         </div>

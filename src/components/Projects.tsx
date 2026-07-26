@@ -1,11 +1,11 @@
-import fitness from '../assets/fitness-tracker.png'
-import nextfolio from '../assets/nextfolio.png'
-import ptcg from '../assets/pokemon-tcg-search.png'
-import emoji from '../assets/emoji-react.png'
-import blob from '../assets/blob.png'
-import alpine from '../assets/alpine.png'
-import snake from '../assets/snake.png'
-import ptcgOld from '../assets/ptcg.png'
+import fitness from '../assets/fitness-tracker.webp'
+import nextfolio from '../assets/nextfolio.webp'
+import ptcg from '../assets/pokemon-tcg-search.webp'
+import emoji from '../assets/emoji-react.webp'
+import blob from '../assets/blob.webp'
+import alpine from '../assets/alpine.webp'
+import snake from '../assets/snake.webp'
+import ptcgOld from '../assets/ptcg.webp'
 
 type Project = {
   title: string
