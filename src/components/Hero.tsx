@@ -82,8 +82,11 @@ export default function Hero() {
           className="font-display text-[36px] md:text-display leading-[1.04] md:leading-[1.1] tracking-[-0.025em] text-on-surface"
           style={{ textWrap: 'balance' as const }}
         >
-          Full Stack Software Engineer building{' '}
-          <span className="text-primary">robust, scalable systems.</span>
+          Full-stack engineer building{' '}
+          <span className="text-primary">
+            <span className="whitespace-nowrap">data-heavy</span>,{' '}
+            <span className="whitespace-nowrap">offline-first</span> web apps.
+          </span>
         </h1>
       </div>
 
@@ -95,7 +98,7 @@ export default function Hero() {
       {/* BOTTOM TEXT (lede + actions + socials) */}
       <div className="space-y-6 md:col-span-7 md:row-start-2 md:self-start">
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-          Full-stack Software Engineer with 3+ years building enterprise web applications used by
+          Full-stack Software Engineer with 3.5 years building enterprise web applications used by
           thousands of utility-industry users. Experienced across Vue.js, React, C#/.NET, REST APIs,
           and SQL Server, with a track record of owning features from initial design through
           production. Graduated Summa Cum Laude from RIT.

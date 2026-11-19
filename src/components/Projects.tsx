@@ -1,11 +1,10 @@
+import resell from '../assets/resell-tracker.webp'
 import fitness from '../assets/fitness-tracker.webp'
 import nextfolio from '../assets/nextfolio.webp'
 import ptcg from '../assets/pokemon-tcg-search.webp'
 import emoji from '../assets/emoji-react.webp'
 import blob from '../assets/blob.webp'
 import alpine from '../assets/alpine.webp'
-import snake from '../assets/snake.webp'
-import ptcgOld from '../assets/ptcg.webp'
 
 type Project = {
   title: string
@@ -19,24 +18,24 @@ type Project = {
 
 const recent: Project[] = [
   {
+    title: 'Resell Tracker',
+    link: 'https://nfb1799.github.io/resell-tracker-vue/',
+    repo: 'https://github.com/nfb1799/resell-tracker-vue',
+    date: 'Sep 2026 – Present',
+    image: resell,
+    description:
+      'Inventory, sales, and profit tracker for reselling on Depop, eBay, and Vinted. Each sale’s net comes from the real payout when it’s entered, or from editable per-platform fee rates when it isn’t, with charts for profit by month, platform, and category. Installs as a PWA, works offline, and syncs through Firebase.',
+    tags: ['Vue 3', 'JavaScript', 'Firebase', 'PWA'],
+  },
+  {
     title: 'Fitness Tracker',
     link: 'https://nfb1799.github.io/fitness-tracker/',
     repo: 'https://github.com/nfb1799/fitness-tracker',
-    date: 'Jan 2026 – Present',
+    date: 'Jan 2026 – Aug 2026',
     image: fitness,
     description:
       'Full-stack fitness tracker covering workout logging, nutrition, and weight-progress visualization. Recharts dashboards, Leaflet GPS route mapping, and Firebase auth with real-time sync, installable as a PWA. Try it with “Continue as Guest”.',
     tags: ['React', 'Firebase', 'Vite', 'PWA'],
-  },
-  {
-    title: 'Nextfolio',
-    link: 'https://nextfolio-five-mu.vercel.app/',
-    repo: 'https://github.com/nfb1799/nextfolio',
-    date: 'Jul 2026 – Present',
-    image: nextfolio,
-    description:
-      'Full-stack storefront in Next.js 16 with cookie-based auth, custom middleware, and Server Actions guarding a dashboard. Product pages render as shareable modals over the shop grid via parallel and intercepting routes — built as a deliberate tour of the App Router, from server components to streaming and optimistic UI. Deployed on Vercel.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind'],
   },
   {
     title: 'Pokémon TCG Search',
@@ -47,6 +46,16 @@ const recent: Project[] = [
     description:
       'Responsive React + Vite app for browsing the full Pokémon Trading Card Game catalog. Features advanced filtering by type, rarity, and set, and live market pricing pulled from TCGPlayer and Cardmarket.',
     tags: ['React', 'Vite', 'Axios', 'REST API'],
+  },
+  {
+    title: 'Nextfolio',
+    link: 'https://nextfolio-five-mu.vercel.app/',
+    repo: 'https://github.com/nfb1799/nextfolio',
+    date: 'Jul 2026 – Aug 2026',
+    image: nextfolio,
+    description:
+      'Full-stack storefront in Next.js 16 with cookie-based auth, custom middleware, and Server Actions guarding a dashboard. Product pages render as shareable modals over the shop grid via parallel and intercepting routes, built as a deliberate tour of the App Router, from server components to streaming and optimistic UI. Deployed on Vercel.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind'],
   },
   {
     title: 'Emoji Games',
@@ -78,24 +87,6 @@ const earlier: Project[] = [
     description:
       'Browser-based downhill snowboarding game built in PixiJS. Survive as long as possible while collecting coins and dodging obstacles.',
     tags: ['PixiJS', 'JavaScript', 'HTML5'],
-  },
-  {
-    title: 'Phyllotaxis Snake',
-    link: 'https://people.rit.edu/nfb1799/330/project1/',
-    date: '2021',
-    image: snake,
-    description:
-      'Interactive Snake game that paints phyllotaxis patterns at every scored point. Built using layered Canvas elements for smooth rendering.',
-    tags: ['Canvas API', 'JavaScript', 'HTML/CSS'],
-  },
-  {
-    title: 'Pokémon TCG Pokédex',
-    link: 'https://people.rit.edu/nfb1799/330/project2/',
-    date: '2021',
-    image: ptcgOld,
-    description:
-      'Earlier vanilla-JS TCG search app with local-storage-based favorites. Combines multiple APIs into one cohesive search experience.',
-    tags: ['JavaScript', 'HTML/CSS', 'REST API'],
   },
 ]
 

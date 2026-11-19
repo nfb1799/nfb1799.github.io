@@ -15,14 +15,14 @@ const cards: Card[] = [
   {
     icon: 'terminal',
     title: 'Backend Architecture',
-    description: 'Designing robust RESTful APIs and services with security and scalability at the core.',
-    tags: ['C# / .NET', 'SQL Server', 'REST APIs', 'Firebase'],
+    description: 'Building REST APIs in C#/.NET over SQL Server, with hand-written queries and stored procedures for business-critical data.',
+    tags: ['C# / .NET', 'SQL Server', 'REST APIs'],
   },
   {
     icon: 'smartphone',
     title: 'Mobile & Offline',
     description: 'Packaging web apps as mobile builds and keeping them usable without connectivity, syncing reliably once a device is back online.',
-    tags: ['Capacitor', 'Ionic', 'PWA'],
+    tags: ['Capacitor', 'Ionic', 'PWA', 'Firebase'],
   },
 ]
 

@@ -17,11 +17,11 @@ export default function CTA() {
           </span>
         </div>
         <h2 className="font-headline-lg text-headline-lg text-on-surface">
-          Ready to build something robust?
+          Let’s talk.
         </h2>
         <p className="font-body-lg text-body-lg text-on-surface-variant">
-          I'm currently looking for new opportunities as a Full Stack Software Engineer. If you're
-          building high-impact systems, I'd love to hear from you.
+          I'm looking for a full-stack role on a team working in Vue, React, or C#/.NET. Email is the
+          fastest way to reach me.
         </p>
         <div className="flex justify-center gap-6 pt-2">
           <a

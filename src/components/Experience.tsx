@@ -20,7 +20,7 @@ const jobs: Entry[] = [
     bullets: [
       'Owned front-end features end-to-end across 3 enterprise web applications used by thousands of utility field technicians, shipping on monthly release cycles alongside 2 engineers and a 3-person QA team.',
       'Built offline-first functionality and packaged web apps as mobile builds with Capacitor and Ionic, letting field technicians capture and sync data without reliable connectivity.',
-      'Developed data-dense interfaces with Esri maps for geospatial visualization and AG Grid for large tabular datasets, surfacing complex operational data interactively.',
+      'Built a data viewer from scratch pairing Esri map layers with an AG Grid table that handles up to 200K rows, using server-side search combined with client-side AG Grid filtering and row virtualization.',
       'Migrated production front-ends from Vue 2 to Vue 3 and modernized state management with Pinia alongside existing Vuex, improving long-term maintainability.',
       'Delivered full-stack features including payroll, building and maintaining C#/.NET REST APIs backed by SQL Server for accurate, business-critical data processing.',
     ],
